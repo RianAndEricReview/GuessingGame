@@ -1,10 +1,10 @@
 'use strict';
 
-function generateWinningNumber() {
+const generateWinningNumber = () => {
   return Math.floor(Math.random() * 100 + 1);
-}
+};
 
-function shuffle(array) {
+const shuffle = (array) => {
   var m = array.length, t, i;
   while (m) {
     i = Math.floor(Math.random() * m--);
@@ -13,7 +13,7 @@ function shuffle(array) {
     array[i] = t;
   }
   return array;
-}
+};
 
 class Game {
   constructor() {
